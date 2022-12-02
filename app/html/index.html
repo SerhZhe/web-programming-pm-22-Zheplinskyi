@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="../scss/main_page.css">
+  <link rel="stylesheet" href="../scss/media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="nav">
+    <div class="shape3">
+      <img class="stonks" src="../img/Shape3.png" alt="Stonks">
+      <h2 class="nav_name">ShapeRex</h2>
+    </div>
+    <div class="navcontent">
+      <div class="navpoint">
+        <a class="linkin" href="#">
+          <div class="navpointmini">
+            <div class="imgnav"><img src="../img/Dashboard.png" alt="Dashboard"></div>
+            <h4> Dashboard</h4>
+          </div>
+        </a>
+        <a class="linkin" href="#">
+          <div class="navpointmini">
+            <div class="imgnav"><img src="../img/My Tasks.png" alt="My Tasks"></div>
+            <h4> My Tasks</h4>
+          </div>
+        </a>
+        <a class="linkin" href="#">
+          <div class="navpointmini">
+            <div class="imgnav"><img src="../img/My Project.png" alt="My Project"></div>
+            <h4> My Project</h4>
+          </div>
+        </a>
+        <a class="linkin" href="#">
+          <div class="navpointmini">
+            <div class="imgnav"><img src="../img/My Wallet.png" alt=""></div>
+            <h4> My Wallet</h4>
+          </div>
+        </a>
+        <a class="linkin" href="#">
+          <div class="navpointmini">
+            <div class="imgnav"><img src="../img/History Data.png" alt=""></div>
+            <h4> History Data</h4>
+          </div>
+        </a>
+        <a class="linkin" href="#">
+          <div class="navpointmini">
+            <div class="imgnav"><img src="../img/Invoice.png" alt=""></div>
+            <h4> Invoice</h4>
+          </div>
+        </a>
+        <a class="linkin" href="#">
+          <div class="navpointmini">
+            <div class="imgnav"><img src="../img/Help.png" alt=""></div>
+            <h4> Helps</h4>
+          </div>
+        </a>
+      </div>
+      <div class="footer">
+        <footer><img class="logout" src="../img/logout.png" alt="logout"> Logout</footer>
+      </div>
+    </div>
+
+  </div>
+  <div class="content">
+    <div class="header">
+      <div class="profile">
+        <div>
+          <img src="../img/Search.png" alt="">
+
+        </div>
+        <div>
+          <img src="../img/Notification.png" alt="">
+          <h5>23</h5>
+        </div>
+        <div>
+          <img src="../img/Message.png" alt="">
+          <h5>31</h5>
+        </div>
+      </div>
+      <div class="nick">
+        <img src="../img/nick-ramil1.png" alt="Search">
+        <img src="../img/nick_arrow.png" alt="arr" class="arrow">
+      </div>
+      <div class="nick__menu" id="nick">
+
+      </div>
+    </div>
+    <div class="information">
+      <div class="left__content">
+        <div class="card simple">
+          <div class="simple__title">
+            My Credit Card
+          </div>
+          <div class="visa">
+            <img src="../img/Visa.png" alt="visa">
+            <div class="card__number">2450 24512 25412</div>
+            <div class="card__data">
+              <h5>12/05</h5>
+              <h5>Subash</h5>
+            </div>
+          </div>
+
+          <div class="card__information">
+            <div class="info__row">
+              <h4 class="key">Card number :</h4>
+              <h4>2450 24512 25412</h4>
+            </div>
+            <div class="info__row">
+              <h4 class="key">Account Name:</h4>
+              <h4>Subash Chandra</h4>
+            </div>
+            <div class="info__row">
+              <h4 class="key">Card status:</h4>
+              <h4>Active</h4>
+            </div>
+          </div>
+        </div>
+        <div class="circle__chart simple">
+          <div class="simple__title">
+            Earning in Month
+          </div>
+          <div class="chart__circ">
+            <div id="chartContainer" style="height: 180px; width: 500%;"></div>
+            <h3 class="circle__data">
+              75%
+            </h3>
+          </div>
+          <div class="card__information">
+            <div class="info__row">
+              <h4 class="key">Card number :</h4>
+              <h4>2450 24512 25412</h4>
+            </div>
+            <div class="info__row">
+              <h4 class="key">Account Name:</h4>
+              <h4>Subash Chandra</h4>
+            </div>
+            <div class="info__row">
+              <h4 class="key">Card status:</h4>
+              <h4>Active</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right__content">
+        <div class="chart simple">
+          <div class="simple__title">
+            Statistic
+          </div>
+          <div class="chart__wrapper">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+        <div class="right__bottom">
+          <div class="r__b__left">
+            <div class="sale monthly-sale simple">
+              <div class="simple__title">
+                Monthly sales
+              </div>
+              <div class="sale__content">
+                <div class="sale__text">
+                  <h4>20 541</h4>
+                  <h6>Today Income</h6>
+                </div>
+                <img src="../img/Down_icon.png" alt="down">
+              </div>
+              <div class="poly3__status">65%</div>
+              <img src="../img/Polygon3.png" alt="" class="poly3">
+            </div>
+            <div class="sale year-sale simple">
+              <div class="simple__title">
+                Yealy Sale
+              </div>
+              <div class="sale__content">
+                <div class="sale__text">
+                  <h4>20 54 125 </h4>
+                  <h6>Today Income</h6>
+                </div>
+                <img src="../img/Save_icon.png" alt="down">
+              </div>
+              <div class="poly3__status poly2s">75%</div>
+              <img src="../img/Polygon 2.png" alt="" class="poly3 poly2">
+            </div>
+          </div>
+          <div class="calendar simple">
+            <div class="calendar__header">
+              <img src="../img/calendar.png" alt="calendar">
+              <h4>Calendar</h4>
+              <div class="dots_c">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="container-calendar">
+                <div class="button-container-calendar">
+                  <button id="previous" onclick="previous()">&#8249;</button>
+                  <h3 id="monthAndYear"></h3>
+                  <button id="next" onclick="next()">&#8250;</button>
+                </div>
+
+                <table class="table-calendar" id="calendar" data-lang="en">
+                  <thead id="thead-month"></thead>
+                  <tbody id="calendar-body"></tbody>
+                </table>
+
+                <div class="footer-container-calendar">
+                  <label for="month">Jump To: </label>
+                  <select id="month" onchange="jump()">
+                    <option value=0>Jan</option>
+                    <option value=1>Feb</option>
+                    <option value=2>Mar</option>
+                    <option value=3>Apr</option>
+                    <option value=4>May</option>
+                    <option value=5>Jun</option>
+                    <option value=6>Jul</option>
+                    <option value=7>Aug</option>
+                    <option value=8>Sep</option>
+                    <option value=9>Oct</option>
+                    <option value=10>Nov</option>
+                    <option value=11>Dec</option>
+                  </select>
+                  <select id="year" onchange="jump()"></select>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="../js/script.js"></script>
+<script src="../js/script1.js"></script>
+</body>
+
+</html>

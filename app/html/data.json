@@ -1,0 +1,17 @@
+[
+  {
+    "type": "Profile"
+  },
+  {
+    "type": "Mail"
+  },
+  {
+    "type": "Tasks"
+  },
+  {
+    "type": "Ses"
+  },
+  {
+    "type": "Log out"
+  }
+]
